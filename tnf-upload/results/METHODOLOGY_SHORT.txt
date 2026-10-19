@@ -1,0 +1,37 @@
+HYPOTHESIS
+
+pH selectivity cannot be filtered with a structure predictor - AF2, Boltz and Chai all ignore protonation, so a folding model scores a design identically at pH 7.4 and pH 6.0. We split the problem: binding was designed and filtered on GPU; pH selectivity was designed rationally and scored by thermodynamic linkage on CPU.
+
+The switch is histidine (pKa ~6.0-6.5: neutral at 7.4, cationic at 6.0). Placed beside a target Arg/Lys, protonation creates charge-charge repulsion and the complex weakens. Placed beside a target Asp/Glu it does the reverse and strengthens binding at low pH, so carboxylate proximity was disqualifying. We scored this as ddG = dG_bind(6.0) - dG_bind(7.4) from PROPKA3 pKa values in the complex versus the free binder. At ~1.4 kcal/mol per 10x Kd shift, "no detectable binding" needs 2.8-4.2 kcal/mol, i.e. 2-3 cooperating histidines.
+
+EPITOPE
+
+Receptor-binding groove at the protomer-protomer interface. Track 3 drops the mouse cross-reactivity constraint, which puts the apex loop back in play - and that is where the cationic residues are. Hotspots B31/B32 (an exposed Arg pair), B33, A87, A145, A146. That Arg pair is the counter-charge the switch histidines push against, and the entire reason this epitope was chosen. Target: 1TNF chains A+B, position 143 patched Leu->Asp to match assay construct TNA-H4211, verified identical to the construct over 6-157. Ligand-bound TNF entries were avoided - they carry smTNF modulators that distort the trimer at the receptor site.
+
+APPROACH
+
+1. RFdiffusion - 383 backbones, 70-110 aa, against the target cropped to a 15 A shell around the hotspots (throughput: 1.09 vs 1.84 min/backbone).
+2. ProteinMPNN soluble weights - binder chain designed, target as fixed context, 4 seq/backbone, T=0.1, Cys forbidden. Two pools: unbiased, and a mild His bias (1.5) to seed switch positions during design. Final slate is 12 biased / 8 unbiased.
+3. Boltz-2 binding filter - 1906 designs. Two points mattered: (a) the target was pinned to the crystal via template, because in single-sequence mode Boltz folds each protomer well but does not dock them (target-internal pair ipTM 0.291), leaving the receptor groove absent from the prediction; with the template it is ~0.71 and binder scores roughly double. (b) Only binder-target chain pairs were scored, taking the minimum - global ipTM on a homotrimer crop is meaningless. Cutoff (pair ipTM 0.285) calibrated in-house against composition-matched shuffled sequences, which topped out at 0.235; no published threshold transfers.
+4. PROPKA3 linkage scan - interface positions near target cations and away from carboxylates substituted to His with a real imidazole built on the N/CA/CB frame. Combinations required >8 A Cb-Cb separation, since closer sites couple and the additive sum overestimates them. Pre-existing histidines are included in the linkage sum - both the target's own (B15 sits 6.6 A from the hotspot patch) and any the biased pool installed - each against the correct unbound reference.
+5. Boltz-2 re-fold - every His combination rebuilt and re-folded to confirm the pH 7.4 interface survived. 66 of 170 variants survived.
+6. Developability and diversity - no free Cys, no N-X-S/T sequons, no homopolymer runs >4, and a total His ceiling of 8 (or 9% of length) counting pre-existing histidines. TM-score clustering at 0.6, capped at 2 variants per parent binder and 8 per cluster.
+
+RESULT
+
+20 designs, 77-108 aa, from 15 distinct parent binders across 6 structural clusters. ddG(6.0 vs 7.4) 2.84-4.05 kcal/mol (median 3.26), implying 123x-950x Kd shift. Binder-target pair ipTM after His installation 0.327-0.650 (median 0.403). 2-4 designed His substitutions each. Ranked by ddG, with post-substitution interface confidence as tiebreak.
+
+LIMITATIONS
+
+No positive control in the ipTM calibration, so the cutoff means "above noise", not "comparable to a known binder"; absolute ipTM values are modest. Structural diversity is the weakest axis at 6 clusters - given prior Adaptyv rounds show in-silico scores predict binding at roughly chance, scaffold concentration is the main avoidable failure mode. The linkage model is additive among sites we kept. PROPKA pKa values are empirical, computed on predicted structures with modelled rotamers. Track 3 asks for no detectable binding at 6.0, not a large fold-change - a 500x shift from a tight starting Kd may still register on BLI.
+
+DESIGN METHODS
+
+RFdiffusion (backbone generation) - https://github.com/RosettaCommons/RFdiffusion
+ProteinMPNN, soluble weights (sequence design) - https://github.com/dauparas/ProteinMPNN
+Boltz-2 (complex prediction, binding filter, re-fold) - https://github.com/jwohlwend/boltz
+PROPKA3 (pKa for thermodynamic linkage) - https://github.com/jensengroup/propka
+TM-align via tmtools (diversity clustering) - https://github.com/jvkersch/tmtools
+Biopython (structure handling, SASA, mutagenesis) - https://biopython.org
+
+No PyRosetta and no dl_binder_design; the AF2 initial-guess / pae_interaction filter was replaced by the calibrated Boltz-2 pair metric above.

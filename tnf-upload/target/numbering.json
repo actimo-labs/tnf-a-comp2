@@ -1,0 +1,1898 @@
+{
+  "pdb": "1TNF",
+  "chains": [
+    "A",
+    "B"
+  ],
+  "bottom_chain": "A",
+  "apex_chain": "B",
+  "numbering": {
+    "A": [
+      {
+        "author": 6,
+        "mature": 6,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 7,
+        "mature": 7,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 8,
+        "mature": 8,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 9,
+        "mature": 9,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 10,
+        "mature": 10,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 11,
+        "mature": 11,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 12,
+        "mature": 12,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 13,
+        "mature": 13,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 14,
+        "mature": 14,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 15,
+        "mature": 15,
+        "resname": "H",
+        "seq_match": true
+      },
+      {
+        "author": 16,
+        "mature": 16,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 17,
+        "mature": 17,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 18,
+        "mature": 18,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 19,
+        "mature": 19,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 20,
+        "mature": 20,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 21,
+        "mature": 21,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 22,
+        "mature": 22,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 23,
+        "mature": 23,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 24,
+        "mature": 24,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 25,
+        "mature": 25,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 26,
+        "mature": 26,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 27,
+        "mature": 27,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 28,
+        "mature": 28,
+        "resname": "W",
+        "seq_match": true
+      },
+      {
+        "author": 29,
+        "mature": 29,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 30,
+        "mature": 30,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 31,
+        "mature": 31,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 32,
+        "mature": 32,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 33,
+        "mature": 33,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 34,
+        "mature": 34,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 35,
+        "mature": 35,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 36,
+        "mature": 36,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 37,
+        "mature": 37,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 38,
+        "mature": 38,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 39,
+        "mature": 39,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 40,
+        "mature": 40,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 41,
+        "mature": 41,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 42,
+        "mature": 42,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 43,
+        "mature": 43,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 44,
+        "mature": 44,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 45,
+        "mature": 45,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 46,
+        "mature": 46,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 47,
+        "mature": 47,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 48,
+        "mature": 48,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 49,
+        "mature": 49,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 50,
+        "mature": 50,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 51,
+        "mature": 51,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 52,
+        "mature": 52,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 53,
+        "mature": 53,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 54,
+        "mature": 54,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 55,
+        "mature": 55,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 56,
+        "mature": 56,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 57,
+        "mature": 57,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 58,
+        "mature": 58,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 59,
+        "mature": 59,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 60,
+        "mature": 60,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 61,
+        "mature": 61,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 62,
+        "mature": 62,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 63,
+        "mature": 63,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 64,
+        "mature": 64,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 65,
+        "mature": 65,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 66,
+        "mature": 66,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 67,
+        "mature": 67,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 68,
+        "mature": 68,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 69,
+        "mature": 69,
+        "resname": "C",
+        "seq_match": true
+      },
+      {
+        "author": 70,
+        "mature": 70,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 71,
+        "mature": 71,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 72,
+        "mature": 72,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 73,
+        "mature": 73,
+        "resname": "H",
+        "seq_match": true
+      },
+      {
+        "author": 74,
+        "mature": 74,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 75,
+        "mature": 75,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 76,
+        "mature": 76,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 77,
+        "mature": 77,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 78,
+        "mature": 78,
+        "resname": "H",
+        "seq_match": true
+      },
+      {
+        "author": 79,
+        "mature": 79,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 80,
+        "mature": 80,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 81,
+        "mature": 81,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 82,
+        "mature": 82,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 83,
+        "mature": 83,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 84,
+        "mature": 84,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 85,
+        "mature": 85,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 86,
+        "mature": 86,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 87,
+        "mature": 87,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 88,
+        "mature": 88,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 89,
+        "mature": 89,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 90,
+        "mature": 90,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 91,
+        "mature": 91,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 92,
+        "mature": 92,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 93,
+        "mature": 93,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 94,
+        "mature": 94,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 95,
+        "mature": 95,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 96,
+        "mature": 96,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 97,
+        "mature": 97,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 98,
+        "mature": 98,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 99,
+        "mature": 99,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 100,
+        "mature": 100,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 101,
+        "mature": 101,
+        "resname": "C",
+        "seq_match": true
+      },
+      {
+        "author": 102,
+        "mature": 102,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 103,
+        "mature": 103,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 104,
+        "mature": 104,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 105,
+        "mature": 105,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 106,
+        "mature": 106,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 107,
+        "mature": 107,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 108,
+        "mature": 108,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 109,
+        "mature": 109,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 110,
+        "mature": 110,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 111,
+        "mature": 111,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 112,
+        "mature": 112,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 113,
+        "mature": 113,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 114,
+        "mature": 114,
+        "resname": "W",
+        "seq_match": true
+      },
+      {
+        "author": 115,
+        "mature": 115,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 116,
+        "mature": 116,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 117,
+        "mature": 117,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 118,
+        "mature": 118,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 119,
+        "mature": 119,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 120,
+        "mature": 120,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 121,
+        "mature": 121,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 122,
+        "mature": 122,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 123,
+        "mature": 123,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 124,
+        "mature": 124,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 125,
+        "mature": 125,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 126,
+        "mature": 126,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 127,
+        "mature": 127,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 128,
+        "mature": 128,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 129,
+        "mature": 129,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 130,
+        "mature": 130,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 131,
+        "mature": 131,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 132,
+        "mature": 132,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 133,
+        "mature": 133,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 134,
+        "mature": 134,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 135,
+        "mature": 135,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 136,
+        "mature": 136,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 137,
+        "mature": 137,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 138,
+        "mature": 138,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 139,
+        "mature": 139,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 140,
+        "mature": 140,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 141,
+        "mature": 141,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 142,
+        "mature": 142,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 143,
+        "mature": 143,
+        "resname": "L",
+        "seq_match": false
+      },
+      {
+        "author": 144,
+        "mature": 144,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 145,
+        "mature": 145,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 146,
+        "mature": 146,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 147,
+        "mature": 147,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 148,
+        "mature": 148,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 149,
+        "mature": 149,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 150,
+        "mature": 150,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 151,
+        "mature": 151,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 152,
+        "mature": 152,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 153,
+        "mature": 153,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 154,
+        "mature": 154,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 155,
+        "mature": 155,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 156,
+        "mature": 156,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 157,
+        "mature": 157,
+        "resname": "L",
+        "seq_match": true
+      }
+    ],
+    "B": [
+      {
+        "author": 6,
+        "mature": 6,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 7,
+        "mature": 7,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 8,
+        "mature": 8,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 9,
+        "mature": 9,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 10,
+        "mature": 10,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 11,
+        "mature": 11,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 12,
+        "mature": 12,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 13,
+        "mature": 13,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 14,
+        "mature": 14,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 15,
+        "mature": 15,
+        "resname": "H",
+        "seq_match": true
+      },
+      {
+        "author": 16,
+        "mature": 16,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 17,
+        "mature": 17,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 18,
+        "mature": 18,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 19,
+        "mature": 19,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 20,
+        "mature": 20,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 21,
+        "mature": 21,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 22,
+        "mature": 22,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 23,
+        "mature": 23,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 24,
+        "mature": 24,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 25,
+        "mature": 25,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 26,
+        "mature": 26,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 27,
+        "mature": 27,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 28,
+        "mature": 28,
+        "resname": "W",
+        "seq_match": true
+      },
+      {
+        "author": 29,
+        "mature": 29,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 30,
+        "mature": 30,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 31,
+        "mature": 31,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 32,
+        "mature": 32,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 33,
+        "mature": 33,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 34,
+        "mature": 34,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 35,
+        "mature": 35,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 36,
+        "mature": 36,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 37,
+        "mature": 37,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 38,
+        "mature": 38,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 39,
+        "mature": 39,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 40,
+        "mature": 40,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 41,
+        "mature": 41,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 42,
+        "mature": 42,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 43,
+        "mature": 43,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 44,
+        "mature": 44,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 45,
+        "mature": 45,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 46,
+        "mature": 46,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 47,
+        "mature": 47,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 48,
+        "mature": 48,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 49,
+        "mature": 49,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 50,
+        "mature": 50,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 51,
+        "mature": 51,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 52,
+        "mature": 52,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 53,
+        "mature": 53,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 54,
+        "mature": 54,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 55,
+        "mature": 55,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 56,
+        "mature": 56,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 57,
+        "mature": 57,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 58,
+        "mature": 58,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 59,
+        "mature": 59,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 60,
+        "mature": 60,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 61,
+        "mature": 61,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 62,
+        "mature": 62,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 63,
+        "mature": 63,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 64,
+        "mature": 64,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 65,
+        "mature": 65,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 66,
+        "mature": 66,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 67,
+        "mature": 67,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 68,
+        "mature": 68,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 69,
+        "mature": 69,
+        "resname": "C",
+        "seq_match": true
+      },
+      {
+        "author": 70,
+        "mature": 70,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 71,
+        "mature": 71,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 72,
+        "mature": 72,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 73,
+        "mature": 73,
+        "resname": "H",
+        "seq_match": true
+      },
+      {
+        "author": 74,
+        "mature": 74,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 75,
+        "mature": 75,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 76,
+        "mature": 76,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 77,
+        "mature": 77,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 78,
+        "mature": 78,
+        "resname": "H",
+        "seq_match": true
+      },
+      {
+        "author": 79,
+        "mature": 79,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 80,
+        "mature": 80,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 81,
+        "mature": 81,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 82,
+        "mature": 82,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 83,
+        "mature": 83,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 84,
+        "mature": 84,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 85,
+        "mature": 85,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 86,
+        "mature": 86,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 87,
+        "mature": 87,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 88,
+        "mature": 88,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 89,
+        "mature": 89,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 90,
+        "mature": 90,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 91,
+        "mature": 91,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 92,
+        "mature": 92,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 93,
+        "mature": 93,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 94,
+        "mature": 94,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 95,
+        "mature": 95,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 96,
+        "mature": 96,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 97,
+        "mature": 97,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 98,
+        "mature": 98,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 99,
+        "mature": 99,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 100,
+        "mature": 100,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 101,
+        "mature": 101,
+        "resname": "C",
+        "seq_match": true
+      },
+      {
+        "author": 102,
+        "mature": 102,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 103,
+        "mature": 103,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 104,
+        "mature": 104,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 105,
+        "mature": 105,
+        "resname": "T",
+        "seq_match": true
+      },
+      {
+        "author": 106,
+        "mature": 106,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 107,
+        "mature": 107,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 108,
+        "mature": 108,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 109,
+        "mature": 109,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 110,
+        "mature": 110,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 111,
+        "mature": 111,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 112,
+        "mature": 112,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 113,
+        "mature": 113,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 114,
+        "mature": 114,
+        "resname": "W",
+        "seq_match": true
+      },
+      {
+        "author": 115,
+        "mature": 115,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 116,
+        "mature": 116,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 117,
+        "mature": 117,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 118,
+        "mature": 118,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 119,
+        "mature": 119,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 120,
+        "mature": 120,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 121,
+        "mature": 121,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 122,
+        "mature": 122,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 123,
+        "mature": 123,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 124,
+        "mature": 124,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 125,
+        "mature": 125,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 126,
+        "mature": 126,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 127,
+        "mature": 127,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 128,
+        "mature": 128,
+        "resname": "K",
+        "seq_match": true
+      },
+      {
+        "author": 129,
+        "mature": 129,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 130,
+        "mature": 130,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 131,
+        "mature": 131,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 132,
+        "mature": 132,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 133,
+        "mature": 133,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 134,
+        "mature": 134,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 135,
+        "mature": 135,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 136,
+        "mature": 136,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 137,
+        "mature": 137,
+        "resname": "N",
+        "seq_match": true
+      },
+      {
+        "author": 138,
+        "mature": 138,
+        "resname": "R",
+        "seq_match": true
+      },
+      {
+        "author": 139,
+        "mature": 139,
+        "resname": "P",
+        "seq_match": true
+      },
+      {
+        "author": 140,
+        "mature": 140,
+        "resname": "D",
+        "seq_match": true
+      },
+      {
+        "author": 141,
+        "mature": 141,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 142,
+        "mature": 142,
+        "resname": "L",
+        "seq_match": true
+      },
+      {
+        "author": 143,
+        "mature": 143,
+        "resname": "L",
+        "seq_match": false
+      },
+      {
+        "author": 144,
+        "mature": 144,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 145,
+        "mature": 145,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 146,
+        "mature": 146,
+        "resname": "E",
+        "seq_match": true
+      },
+      {
+        "author": 147,
+        "mature": 147,
+        "resname": "S",
+        "seq_match": true
+      },
+      {
+        "author": 148,
+        "mature": 148,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 149,
+        "mature": 149,
+        "resname": "Q",
+        "seq_match": true
+      },
+      {
+        "author": 150,
+        "mature": 150,
+        "resname": "V",
+        "seq_match": true
+      },
+      {
+        "author": 151,
+        "mature": 151,
+        "resname": "Y",
+        "seq_match": true
+      },
+      {
+        "author": 152,
+        "mature": 152,
+        "resname": "F",
+        "seq_match": true
+      },
+      {
+        "author": 153,
+        "mature": 153,
+        "resname": "G",
+        "seq_match": true
+      },
+      {
+        "author": 154,
+        "mature": 154,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 155,
+        "mature": 155,
+        "resname": "I",
+        "seq_match": true
+      },
+      {
+        "author": 156,
+        "mature": 156,
+        "resname": "A",
+        "seq_match": true
+      },
+      {
+        "author": 157,
+        "mature": 157,
+        "resname": "L",
+        "seq_match": true
+      }
+    ]
+  },
+  "epitope_mature": {
+    "bottom": [
+      86,
+      87,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "apex": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ]
+  },
+  "cationic_mature": [
+    31,
+    32,
+    65,
+    90,
+    98,
+    112,
+    131,
+    138
+  ],
+  "anionic_mature": [
+    23,
+    110,
+    116,
+    127,
+    130,
+    135,
+    140,
+    143,
+    146
+  ],
+  "hotspots_author": [
+    "A86",
+    "A87",
+    "A143",
+    "A144",
+    "A145",
+    "A146",
+    "A147",
+    "A148",
+    "B29",
+    "B30",
+    "B31",
+    "B32",
+    "B33",
+    "B34",
+    "B35"
+  ]
+}

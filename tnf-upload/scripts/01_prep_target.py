@@ -19,9 +19,11 @@ Usage:
 import argparse
 import json
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 
-from Bio.PDB import PDBList, PDBParser, PDBIO, Select
+from Bio.PDB import MMCIFParser, PDBParser, PDBIO, Select
 from Bio.PDB.SASA import ShrakeRupley
 
 # Mature human TNF-alpha soluble domain, UniProt P01375 residues 77-233.
@@ -62,12 +64,71 @@ class ChainSelect(Select):
 
 
 def fetch(pdb_id, outdir):
+    """
+    Fetch straight from RCSB. Biopython's PDBList uses a legacy endpoint that
+    now returns 403 for every entry, so do not route through it.
+
+    Tries legacy .pdb first (simpler parsing, and TNF is small enough to always
+    have one), falls back to .cif.
+    """
     outdir.mkdir(parents=True, exist_ok=True)
-    pdbl = PDBList()
-    path = pdbl.retrieve_pdb_file(pdb_id, pdir=str(outdir), file_format="pdb")
-    if not Path(path).exists():
-        sys.exit(f"could not fetch {pdb_id}")
-    return Path(path)
+    pdb_id = pdb_id.lower()
+    errors = []
+
+    def looks_like_structure(data):
+        """
+        RCSB returns a short HTML/text error page for entries with no legacy
+        .pdb file, and a size check alone will happily accept it. Require
+        actual coordinate records.
+
+        Scan the whole file, not a prefix: a real PDB entry carries hundreds of
+        REMARK/SEQRES header lines before the first ATOM record, easily more
+        than any fixed head window.
+        """
+        return b"\nATOM " in data or b"\nHETATM" in data or b"_atom_site" in data
+
+    for ext in ("pdb", "cif"):
+        dest = outdir / f"{pdb_id}.{ext}"
+        if dest.exists():
+            if looks_like_structure(dest.read_bytes()):
+                print(f"[01] using cached {dest}")
+                return dest
+            print(f"[01] cached {dest} is not a structure, discarding", file=sys.stderr)
+            dest.unlink()
+
+        url = f"https://files.rcsb.org/download/{pdb_id.upper()}.{ext}"
+        try:
+            req = urllib.request.Request(
+                url, headers={"User-Agent": "tnf-track3/1.0"}
+            )
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = resp.read()
+        except urllib.error.HTTPError as exc:
+            errors.append(f"{url} -> HTTP {exc.code}")
+            continue
+        except Exception as exc:  # network, DNS, timeout
+            errors.append(f"{url} -> {exc}")
+            continue
+
+        if not looks_like_structure(data):
+            errors.append(
+                f"{url} -> no coordinate records in {len(data)} bytes "
+                f"(entry likely has no legacy .pdb file)"
+            )
+            continue
+
+        dest.write_bytes(data)
+        print(f"[01] fetched {dest} ({len(data) // 1024} KB)")
+        return dest
+
+    for e in errors:
+        print(f"[01] {e}", file=sys.stderr)
+    sys.exit(
+        f"could not fetch {pdb_id.upper()} from RCSB as .pdb or .cif.\n"
+        f"If this instance has no outbound HTTPS, download it on your laptop\n"
+        f"  curl -O https://files.rcsb.org/download/{pdb_id.upper()}.pdb\n"
+        f"and place it at {outdir / (pdb_id + '.pdb')}"
+    )
 
 
 def build_numbering_map(structure, chains):
@@ -130,7 +191,14 @@ def compute_sasa(structure, chains):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--pdb", default="9OJO", help="9OJO (1.36 A) preferred; 1TNF fallback")
+    ap.add_argument(
+        "--pdb",
+        default="1TNF",
+        help="1TNF: apo trimer, matches the assay target. Do NOT use the "
+        "small-molecule-bound entries (9OJO/9OJS/6X81/2AZ5) -- smTNF "
+        "modulators distort the trimer at the receptor site, which is "
+        "exactly the surface being designed against.",
+    )
     ap.add_argument("--chains", nargs=2, default=["A", "B"])
     ap.add_argument("--outdir", default="target")
     args = ap.parse_args()
@@ -138,7 +206,10 @@ def main():
     outdir = Path(args.outdir)
     raw = fetch(args.pdb, outdir / "raw")
 
-    parser = PDBParser(QUIET=True)
+    if raw.suffix == ".cif":
+        parser = MMCIFParser(QUIET=True)
+    else:
+        parser = PDBParser(QUIET=True)
     structure = parser.get_structure(args.pdb, str(raw))
 
     present = {c.id for c in structure[0]}

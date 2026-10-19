@@ -218,3 +218,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- project overrides ---
+# "target/" above is PyBuilder's build dir; ours is the TNF-alpha design target.
+!tnf-upload/target/
+!tnf-upload/target/**
+# setup.log is provenance, not an app log.
+!tnf-upload/setup.log
+# Never commit model weights, third-party clones or run scratch.
+RFdiffusion/
+ProteinMPNN/
+venv-phscan/
+*.pt
+*.pth
