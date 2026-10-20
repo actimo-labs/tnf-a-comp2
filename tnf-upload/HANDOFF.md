@@ -254,7 +254,6 @@ strong 7.4 affinity **and** a large shift, not shift alone.
 
 ## Open decision
 
-PyRosetta licence. `dl_binder_design` needs one (free academic, paid
-commercial; Actimo has paying clients). Taking it restores the validated AF2
-`pae_interaction < 10` filter and removes the Boltz calibration step. Current
-path assumes no licence.
+PyRosetta licence. `dl_binder_design` needs one (free for academic use, paid
+otherwise). Taking it restores the validated AF2 `pae_interaction < 10` filter
+and removes the Boltz calibration step. Current path assumes no licence.

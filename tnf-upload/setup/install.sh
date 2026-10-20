@@ -162,8 +162,8 @@ if ! done_ 04_validator; then
   log "04 validator ($VALIDATOR)"
 
   if [[ "$VALIDATOR" == "boltz" ]]; then
-    # No PyRosetta, no licence question, and reuses the stack already running
-    # at Actimo. Cost: the published pae_interaction<10 threshold does not
+    # No PyRosetta and no licence question. Cost: the published
+    # pae_interaction<10 threshold does not
     # transfer -- calibrate on ipTM against a handful of known binders first.
     conda create -n boltz python=3.11 -y 2>/dev/null || true
     conda activate boltz

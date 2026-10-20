@@ -223,8 +223,10 @@ __marimo__/
 # "target/" above is PyBuilder's build dir; ours is the TNF-alpha design target.
 !tnf-upload/target/
 !tnf-upload/target/**
-# setup.log is provenance, not an app log.
-!tnf-upload/setup.log
+# setup.log was tracked as provenance, but it is a 29k-line build transcript
+# carrying absolute paths from the machine it was built on, and the useful
+# parts are summarised in tnf-upload/HANDOFF.md. Keep it ignored.
+# !tnf-upload/setup.log
 # Never commit model weights, third-party clones or run scratch.
 RFdiffusion/
 ProteinMPNN/

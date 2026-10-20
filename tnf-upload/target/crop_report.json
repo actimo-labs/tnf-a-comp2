@@ -1,5 +1,5 @@
 {
-  "source_pdb": "/home/HarjasG/tnf-track3/target/tnf_AB.pdb",
+  "source_pdb": "target/tnf_AB.pdb",
   "radius": 15.0,
   "max_gap": 4,
   "min_len": 5,
