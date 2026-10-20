@@ -18,6 +18,23 @@ run, not a cleaned-up reconstruction.
 
 ---
 
+![tnf3_01 bound to TNF-alpha](tnf-upload/figures/tnf3_01_interface.png)
+
+**`tnf3_01`** (ΔΔG 4.56 kcal/mol, the best design in the slate) in the
+receptor-binding groove. Orange is the designed binder; grey and light blue are
+the two TNF-α protomers. **Yellow sticks are the three switch histidines**
+(H16, H31, H78); **blue sticks are the target Arg/Lys each one pushes against**
+when protonated at pH 6.0 — His31 sits 3.4 Å from A32's guanidinium, His78
+4.0 Å from B138's.
+
+Note this design engages chain **A**'s copy of the apex arginine pair, not
+chain B's. The target is a symmetric two-protomer crop, so both chains carry
+residues 31/32 and a binder can settle on either half of the groove.
+`scripts/render_complex.py` derives the cation partners from the structure
+rather than assuming the hotspots it was told to target.
+
+---
+
 ## The core idea
 
 **pH selectivity cannot be filtered with a structure predictor.** AF2, Boltz and
@@ -80,6 +97,7 @@ against.
 | 05 | `scripts/05_ph_scan.py` | PROPKA3 thermodynamic linkage scan (CPU, parallel) |
 | 06 | `scripts/06_his_refold.py` | re-fold every His variant, confirm pH 7.4 binding survives |
 | 07 | `scripts/07_submit.py` | developability, TM-score clustering, ranked CSV |
+| — | `scripts/render_complex.py` | PyMOL cartoon of a complex, switch His highlighted |
 
 Driven by `run_all.sh` per stage, or `round2.sh` / `drive_*.sh` for unattended
 multi-stage runs.
@@ -96,7 +114,16 @@ CUTOFF=0.285 ./run_all.sh 06
 
 `setup/install.sh` builds the environments. RFdiffusion runs from the
 `rosettacommons/rfdiffusion` Docker image; ProteinMPNN and Boltz-2 run in conda
-environments; the pH scan runs in a venv with biopython + propka.
+environments; the pH scan runs in a venv with biopython + propka. A `viz`
+environment (PyMOL + pillow) is created for rendering — optional, and the
+installer carries on without it.
+
+```bash
+conda run -n viz pymol -cq scripts/render_complex.py -- \
+    results/structures/complex/tnf3_05_complex.pdb figures/tnf3_05 "D53H,E66H"
+```
+
+Mutations come from the `mutations` column of `results/submission_report.tsv`.
 
 ## Measured throughput
 
