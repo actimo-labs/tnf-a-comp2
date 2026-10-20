@@ -203,6 +203,24 @@ EOF
   mark 04_validator
 fi
 
+# ----------------------------------------------------------------- 04b viz
+# Optional: PyMOL for rendering designed complexes (scripts/render_complex.py).
+# Not on the design path, so a failure here must not fail the install -- but
+# without it the structures in results/ can only be inspected by hand.
+if ! done_ 04b_viz; then
+  log "04b visualisation (pymol, optional)"
+  if conda create -n viz -c conda-forge pymol-open-source pillow -y >/dev/null 2>&1 \
+     && conda run -n viz python -c "from pymol import cmd" >/dev/null 2>&1; then
+    echo "  pymol OK -- render with:"
+    echo "    conda run -n viz pymol -cq scripts/render_complex.py -- \\"
+    echo "        results/structures/complex/tnf3_01_complex.pdb figures/tnf3_01 \"Q78H,K16H,E31H\""
+    mark 04b_viz
+  else
+    echo "  pymol install failed -- skipping. Rendering will be unavailable;"
+    echo "  nothing else is affected."
+  fi
+fi
+
 # ----------------------------------------------------------------- 05 env
 if ! done_ 05_env; then
   log "05 pipeline env file"
